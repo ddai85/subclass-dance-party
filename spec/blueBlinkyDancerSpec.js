@@ -1,4 +1,4 @@
-describe('BlueBlinkyDancer', function() {
+describe('blinkyDancer', function() {
 
   var blinkyDancer, clock;
   var timeBetweenSteps = 100;
@@ -17,6 +17,11 @@ describe('BlueBlinkyDancer', function() {
     sinon.spy(blinkyDancer.$node, 'toggle');
     blinkyDancer.step();
     expect(blinkyDancer.$node.toggle.called).to.be.true;
+  });
+
+  it('should be blue', function() {
+    blinkyDancer.blue();
+    expect(blinkyDancer.$node.css('border-color')).to.be.equal('blue');
   });
 
   describe('dance', function() {

@@ -15,8 +15,9 @@ squareDancer.prototype.constructor = squareDancer;
 squareDancer.prototype.square = function() { 
   var styleSettings = {
     'border-radius': 0,
-    'border-color': 'blue',
-    'border-width': '15px'
+    'border-color': 'yellow',
+    'border-width': '15px',
+    'display': 'block',
   };
   this.$node.css(styleSettings);
 };
