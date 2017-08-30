@@ -15,7 +15,7 @@ BlueBlinkyDancer.prototype.constructor = BlueBlinkyDancer;
 BlueBlinkyDancer.prototype.blue = function() { 
   var styleSettings = {
     'border-color': 'blue',
-    'border-width': '15px'
+    'border-width': '0px'
   };
   this.$node.css(styleSettings);
 };
